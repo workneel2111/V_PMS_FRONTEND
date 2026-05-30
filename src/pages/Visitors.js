@@ -274,7 +274,7 @@ function Visitors() {
                             {/* Photo */}
                             {visitor.photo && (
                                 <img
-                                    src={`http://localhost:5000/${visitor.photo}`}
+                                    src={`https://v-pms-backend.onrender.com/${visitor.photo}`}
                                     alt="visitor"
                                     width="100%"
                                     style={{

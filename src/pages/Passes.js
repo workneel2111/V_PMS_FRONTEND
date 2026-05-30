@@ -108,7 +108,7 @@ function Passes() {
                                     {/* PDF DOWNLOAD */}
 
                                     <a
-                                        href={`http://localhost:5000/api/passes/pdf/${pass._id}`}
+                                        href={`https://v-pms-backend.onrender.com/api/passes/pdf/${pass._id}`}
                                         target="_blank"
                                         rel="noreferrer"
                                     >

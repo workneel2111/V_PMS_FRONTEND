@@ -43,7 +43,7 @@ function Reports() {
                 </a>
 
                 <a
-                    href="http://localhost:5000/api/reports/logs"
+                    href="https://v-pms-backend.onrender.com/api/reports/logs"
                 >
                     <button>
                         Export Logs
