@@ -92,33 +92,27 @@ git clone https://github.com/workneel2111/V_PMS_FRONTEND.git
 cd V_PMS_FRONTEND
 ```
 
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/workneel2111/V_PMS_FRONTEND.git
+```
+
+### Navigate to Project
+
+```bash
+cd V_PMS_FRONTEND
+```
+
 ### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Create Environment File
-
-Create:
-
-```env
-.env
-```
-
-Add:
-
-```env
-REACT_APP_API_URL=http://localhost:5000/api
-```
-
-For Production:
-
-```env
-REACT_APP_API_URL=https://v-pms-backend.onrender.com/api
-```
-
-### Run Application
+### Start Development Server
 
 ```bash
 npm start
@@ -132,11 +126,26 @@ http://localhost:3000
 
 ---
 
-## Build
+## Backend Connection
+
+The frontend is already configured to connect with the deployed backend API:
+
+```text
+https://v-pms-backend.onrender.com/
+```
+
+No additional environment variables are required.
+
+---
+
+## Build for Production
 
 ```bash
 npm run build
 ```
+
+This generates the production build inside the `build` folder.
+
 
 ---
 
