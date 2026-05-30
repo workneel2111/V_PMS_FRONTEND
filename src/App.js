@@ -1,25 +1,100 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+    Routes,
+    Route
+} from "react-router-dom";
+
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import Visitors from "./pages/Visitors";
+import Appointments from "./pages/Appointments";
+import Passes from "./pages/Passes";
+import Logs from "./pages/Logs";
+import Reports from "./pages/Reports";
+
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+
+            <Routes>
+
+                {/* PUBLIC */}
+
+                <Route
+                    path="/"
+                    element={<Login />}
+                />
+
+                {/* DASHBOARD */}
+
+                <Route
+                    path="/dashboard"
+                    element={
+                        <ProtectedRoute>
+                            <Dashboard />
+                        </ProtectedRoute>
+                    }
+                />
+
+                {/* VISITORS */}
+
+                <Route
+                    path="/visitors"
+                    element={
+                        <ProtectedRoute>
+                            <Visitors />
+                        </ProtectedRoute>
+                    }
+                />
+
+                {/* APPOINTMENTS */}
+
+                <Route
+                    path="/appointments"
+                    element={
+                        <ProtectedRoute>
+                            <Appointments />
+                        </ProtectedRoute>
+                    }
+                />
+
+                {/* PASSES */}
+
+                <Route
+                    path="/passes"
+                    element={
+                        <ProtectedRoute>
+                            <Passes />
+                        </ProtectedRoute>
+                    }
+                />
+
+                {/* LOGS */}
+
+                <Route
+                    path="/logs"
+                    element={
+                        <ProtectedRoute>
+                            <Logs />
+                        </ProtectedRoute>
+                    }
+                />
+
+                {/* REPORTS */}
+
+                <Route
+                    path="/reports"
+                    element={
+                        <ProtectedRoute>
+                            <Reports />
+                        </ProtectedRoute>
+                    }
+                />
+
+            </Routes>
+
+    );
 }
 
 export default App;
