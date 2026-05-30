@@ -19,7 +19,7 @@ function Reports() {
             >
 
                 <a
-                    href="http://localhost:5000/api/reports/visitors"
+                    href="https://v-pms-backend.onrender.com/api/reports/visitors"
                 >
                     <button>
                         Export Visitors
@@ -27,7 +27,7 @@ function Reports() {
                 </a>
 
                 <a
-                    href="http://localhost:5000/api/reports/appointments"
+                    href="https://v-pms-backend.onrender.com/api/reports/appointments"
                 >
                     <button>
                         Export Appointments
@@ -35,7 +35,7 @@ function Reports() {
                 </a>
 
                 <a
-                    href="http://localhost:5000/api/reports/passes"
+                    href="https://v-pms-backend.onrender.com/api/reports/passes"
                 >
                     <button>
                         Export Passes

@@ -98,7 +98,7 @@ http://localhost:3000
 
 Create a .env file inside frontend folder:
 
-REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_API_URL=https://v-pms-backend.onrender.com/api
 
 For Production:
 
