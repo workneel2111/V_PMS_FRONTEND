@@ -2,9 +2,39 @@
 
 ## Overview
 
-The frontend of the Visitor Pass Management System is developed using React.js. It provides an interactive user interface for managing visitors, appointments, passes, logs, reports, and analytics.
+This is the frontend application for the Visitor Pass Management System built using React.js.
 
-The application supports role-based access for Admin, Security Staff, Employees, and Visitors.
+The application provides dashboards and interfaces for:
+
+* Admin
+* Security Staff
+* Employees
+* Visitors
+
+Users can register visitors, manage appointments, generate visitor passes, download PDF badges, view logs, and access analytics.
+
+---
+
+## Live Demo
+
+Frontend URL:
+
+https://neon-croissant-228568.netlify.app/
+
+Backend API:
+
+https://v-pms-backend.onrender.com/
+
+---
+
+## Technologies Used
+
+* React.js
+* React Router DOM
+* Axios
+* JavaScript
+* CSS
+* HTML5
 
 ---
 
@@ -12,61 +42,39 @@ The application supports role-based access for Admin, Security Staff, Employees,
 
 ### Authentication
 
-* User Login
-* JWT Token Storage
-* Protected Routes
-* Logout Functionality
+* Login System
+* JWT Authentication
+* Role Based Access
 
 ### Visitor Management
 
-* Register New Visitors
-* View Visitor Details
+* Add Visitor
+* View Visitors
 * Search Visitors
 
 ### Appointment Management
 
-* Create Appointments
-* Assign Visitors to Hosts
-* Approve/Reject Appointments
-* View Appointment History
+* Create Appointment
+* Approve Appointment
+* Update Status
+* View Appointments
 
 ### Pass Management
 
-* Generate Visitor Passes
-* Display QR Codes
-* Download PDF Visitor Passes
+* Generate Pass
+* QR Code Display
+* PDF Badge Download
 
-### Check-In / Check-Out
+### Logs
 
-* Visitor Entry Management
-* Visitor Exit Management
-* View Check Logs
-
-### Dashboard
-
-* Total Visitors
-* Total Appointments
-* Total Passes
-* Total Logs
-* Analytics Overview
+* Check-In
+* Check-Out
+* Activity Logs
 
 ### Reports
 
-* Export Visitors Report
-* Export Appointments Report
-* Export Passes Report
-* Export Logs Report
-
----
-
-## Technology Stack
-
-* React.js
-* React Router DOM
-* Axios
-* HTML5
-* CSS3
-* JavaScript (ES6)
+* Export CSV Reports
+* Analytics Dashboard
 
 ---
 
@@ -74,112 +82,101 @@ The application supports role-based access for Admin, Security Staff, Employees,
 
 ### Clone Repository
 
-git clone <repository-url>
+```bash
+git clone https://github.com/workneel2111/V_PMS_FRONTEND.git
+```
 
-### Navigate to Frontend
+### Navigate
 
-cd frontend
+```bash
+cd V_PMS_FRONTEND
+```
 
 ### Install Dependencies
 
+```bash
 npm install
+```
 
-### Start Development Server
+### Create Environment File
 
-npm start
+Create:
 
-Application will run on:
+```env
+.env
+```
 
-http://localhost:3000
+Add:
 
----
-
-## Environment Variables
-
-Create a .env file inside frontend folder:
-
-REACT_APP_API_URL=https://v-pms-backend.onrender.com/api
+```env
+REACT_APP_API_URL=http://localhost:5000/api
+```
 
 For Production:
 
-REACT_APP_API_URL=https://your-render-backend-url.onrender.com/api
+```env
+REACT_APP_API_URL=https://v-pms-backend.onrender.com/api
+```
+
+### Run Application
+
+```bash
+npm start
+```
+
+Application runs on:
+
+```text
+http://localhost:3000
+```
 
 ---
 
-## Project Structure
+## Build
 
-frontend
-
-├── public
-
-├── src
-
-│   ├── components
-
-│   ├── layouts
-
-│   ├── pages
-
-│   ├── services
-
-│   ├── App.js
-
-│   └── index.js
-
-├── package.json
-
-└── README.md
-
----
-
-## User Roles
-
-### Admin
-
-* Dashboard
-* Visitors
-* Appointments
-* Passes
-* Logs
-* Reports
-
-### Security
-
-* Passes
-* Check-In
-* Check-Out
-* Logs
-
-### Employee
-
-* Appointments
-* Visitor Approval
-
-### Visitor
-
-* View Pass
-
----
-
-## Deployment
-
-### Netlify
-
-Base Directory:
-
-frontend
-
-Build Command:
-
+```bash
 npm run build
-
-Publish Directory:
-
-build
+```
 
 ---
 
-## Developed By
+## Demo Credentials
+
+Admin
+
+Email:
+[neel@test.com](mailto:neel@test.com)
+
+Password:
+123456
+
+Security
+
+Email:
+[security@test.com](mailto:security@test.com)
+
+Password:
+123456
+
+Employee
+
+Email:
+[employee@test.com](mailto:employee@test.com)
+
+Password:
+123456
+
+Visitor
+
+Email:
+[visitor@test.com](mailto:visitor@test.com)
+
+Password:
+123456
+
+---
+
+## Author
 
 Neel Patel
 
